@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+
+}
+
+
+body{
+
+    background-image: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url("1367464-lord-shiva-wallpapers-hd-1920x1200-for-windows-10.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    
+    background-position: center;
+    margin-bottom: 0;
+}
+
+.navbar{
+
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    text-align: center;
+    padding: 35px 0px;
+    margin-left: 100px;
+}
+
+.navbar ul li{
+    
+    display: inline-block;
+    margin: 20px 25px;
+    list-style: none;
+    font-weight: 200;
+    
+    font-family: 'Playfair Display', serif;
+    color: white;
+    position: relative;
+
+}
+
+.navbar ul li a{
+
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    right: 0%;
+    bottom: -10px;
+    transition: 0.4s;
+
+}
+
+.navbar ul li:hover::after{
+
+    
+    width: 100%;
+
+}
+
+.content{
+   text-align: center;
+   margin-top: 70px;
+   transform: translateY(-50%);
+   top: 45%;
+   position: absolute;
+   color: white;
+   width: 100%;
+
+}
+
+.content h1{
+
+    margin-left: -600px;
+    margin-bottom: 30px;
+    font-size: 58px;
+}
+
+.content p{
+
+    margin-left: -600px;
+    font-size: large;
+}
+
+.button1{
+
+    height:  50px;
+    width: 150px;
+    margin-top: 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+    margin-left: -600px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,4,45,1) 100%, rgba(0,212,255,1) 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.button2{
+    height:  50px;
+    width: 150px;
+    margin-top: 50px;
+    border-radius:  30px;
+    font-weight: bold;
+    border: 2px solid white;
+    margin-left: 30px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,4,45,1) 100%, rgba(0,212,255,1) 100%);   
+    color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.button1:hover{
+    border: none;
+}
+
+.button2:hover{
+    border: none;
+}
+
+.container{
+    position: relative;
+
+}
+.container video{
+
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 0px;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    z-index : 0;
+}
+
+.over{
+    z-index: 1;
+    position: absolute;
+    color: white;
+    left: 0;
+    bottom: 0;
+
+}
+ .over h2{
+    font-size: 100px;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 80px;
+    margin-left: 50px;
+    position: relative;
+}
+.over p{
+
+    font-size: 15px;
+    margin-left: 30px;
+    margin-right: 50px;
+    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 90px;
+  
+}
+
+.over h2 .awesome{
+    position: absolute;
+    height: 100%;
+    width: 0;
+    left: 0;
+    background: #34569c;
+
+    animation: over 1200ms  ease-out;
+}
+ @keyframes  over {
+     80%{
+        width: 100%;
+        left: 0;
+     }
+
+     100%{
+        width: 0%;
+        left: 100%;
+     }
+ }
+
+
+ .container2 .image2{
+
+    position: relative; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 75%;
+  margin-top: 0;
+  
+  position: relative;
+  z-index: -1;
+  
+
+ }
+
+ .container2{
+    position: relative;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70) );
+  
+    
+ }
+
+ .container2 .box1{
+     position: absolute;
+     width: 300px;
+     height: 300px;
+     box-sizing: border-box;
+     border-radius: 15px;
+     float: left;
+     margin: 15px;
+     background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,133,1) 100%);
+     overflow: hidden;
+     z-index: 1;
+     top: 500px;
+     left: 200px;
+     transition: transform .2s;
+     
+}
+
+.box1:hover {
+    transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.container2 .box2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    float: left;
+    margin: 15px;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,133,1) 100%);
+    overflow: hidden;
+    z-index: 1;
+    top: 500px;
+    left: 600px;
+    transition: transform .2s;
+    
+}
+.box2:hover {
+    transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.container2 .box3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    float: left;
+    margin: 15px;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,133,1) 100%);
+    overflow: hidden;
+    z-index: 1;
+    top: 500px;
+    left: 1000px;
+    transition: transform .2s;
+}
+.box3:hover {
+    transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.container2 .trinity h2{
+    font-size: 70px;
+    margin-bottom: 30px;
+    margin-left: 450px;
+    
+    font-family: 'Playfair Display', serif;
+font-family: 'Young Serif', serif;
+
+}
+
+.container2 .trinity{
+
+    top: 200px;
+    left: 70px;
+    overflow: hidden;
+    color: white;
+    position: absolute;
+}
+
+.container2 .trinity p{
+    font-family: 'Playfair Display', serif;
+font-family: 'Young Serif', serif;
+font-size: 20px;
+text-align: center;
+}
+
+
+.icon{
+
+    background: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.content h3{
+    font-size: 40px;
+    margin-top: 100px
+}
+
+.content2{
+    background:   linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) );
+    position: relative;
+}
+.content2 .image3{
+
+position: relative; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  width: 100%;
+  height: 150%;
+  margin-top: 0;
+  
+  position: relative;
+  z-index: -1;
+  
+}
+
+
+ .head h3{
+
+    position: absolute;
+    font-size: 60px;
+    top: 300px;
+    left: 100px;
+    font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Young Serif', serif;
+    color: white;
+}
+
+.head p{
+    position: absolute;
+    font-size: 20px;
+    top: 500px;
+    left: 100px;
+    color: white;
+    float: left;
+    padding-right: 40%;
+    
+
+}
+
+.head .image4{
+    top: 200px;
+    right: 50px;
+    height: 700px;
+    width: 500px;
+    float: right;
+    position: absolute;
+    float: left;
+    transition: transform .2s;
+}
+.image4:hover {
+    transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+    
